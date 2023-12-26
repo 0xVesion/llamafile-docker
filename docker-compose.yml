@@ -2,7 +2,7 @@ version: "3.0"
 services:
   llamafile:
     container_name: llamafile
-    build: .
+    image: ghcr.io/0xvesion/llamafile-docker:main
     volumes:
      - ./my_model.gguf:/app/model
     ports:
