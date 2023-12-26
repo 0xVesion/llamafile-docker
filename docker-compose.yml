@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  llamafile:
+    container_name: llamafile
+    build: .
+    volumes:
+     - ./my_model.gguf:/app/model
+    ports:
+      - 8080:8080
